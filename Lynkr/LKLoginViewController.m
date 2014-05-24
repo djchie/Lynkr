@@ -1,18 +1,18 @@
 //
-//  LKHomeViewController.m
+//  LKLoginViewController.m
 //  Lynkr
 //
 //  Created by Derrick J Chie on 5/24/14.
 //  Copyright (c) 2014 Derrick J Chie. All rights reserved.
 //
 
-#import "LKHomeViewController.h"
+#import "LKLoginViewController.h"
 
-@interface LKHomeViewController ()
+@interface LKLoginViewController ()
 
 @end
 
-@implementation LKHomeViewController
+@implementation LKLoginViewController
 
 - (void)viewDidLoad
 {

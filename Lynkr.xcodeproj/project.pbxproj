@@ -40,6 +40,7 @@
 		C1844DC9193090C000D88380 /* LKProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DC8193090C000D88380 /* LKProfileViewController.m */; };
 		C1844DCC193091F600D88380 /* LKMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DCB193091F600D88380 /* LKMessageViewController.m */; };
 		C1844DCF1930927600D88380 /* LKSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DCE1930927600D88380 /* LKSettingViewController.m */; };
+		C1844DD51930A3BA00D88380 /* LKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DD41930A3BA00D88380 /* LKLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,8 @@
 		C1844DCB193091F600D88380 /* LKMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKMessageViewController.m; sourceTree = "<group>"; };
 		C1844DCD1930927600D88380 /* LKSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKSettingViewController.h; sourceTree = "<group>"; };
 		C1844DCE1930927600D88380 /* LKSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKSettingViewController.m; sourceTree = "<group>"; };
+		C1844DD31930A3BA00D88380 /* LKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKLoginViewController.h; sourceTree = "<group>"; };
+		C1844DD41930A3BA00D88380 /* LKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +185,8 @@
 				C10A085019307BE000D37112 /* AppDelegate.h */,
 				C10A085119307BE000D37112 /* AppDelegate.m */,
 				C10A085319307BE000D37112 /* Main.storyboard */,
+				C1844DD31930A3BA00D88380 /* LKLoginViewController.h */,
+				C1844DD41930A3BA00D88380 /* LKLoginViewController.m */,
 				C10A085619307BE000D37112 /* LKRootViewController.h */,
 				C10A085719307BE000D37112 /* LKRootViewController.m */,
 				C1844DC419308FEC00D88380 /* LKHomeViewController.h */,
@@ -367,6 +372,7 @@
 				C1844DB9193087CF00D88380 /* RECommonFunctions.m in Sources */,
 				C1844DCC193091F600D88380 /* LKMessageViewController.m in Sources */,
 				C1844DBF19308C6D00D88380 /* LKLeftMenuViewController.m in Sources */,
+				C1844DD51930A3BA00D88380 /* LKLoginViewController.m in Sources */,
 				C1844DC9193090C000D88380 /* LKProfileViewController.m in Sources */,
 				C1844DBB193087CF00D88380 /* UIViewController+RESideMenu.m in Sources */,
 				C1844DC219308CA400D88380 /* LKRightMenuViewController.m in Sources */,
