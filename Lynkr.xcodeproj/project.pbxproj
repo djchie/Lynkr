@@ -40,6 +40,7 @@
 		C1844DC9193090C000D88380 /* LKProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DC8193090C000D88380 /* LKProfileViewController.m */; };
 		C1844DCC193091F600D88380 /* LKMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DCB193091F600D88380 /* LKMessageViewController.m */; };
 		C1844DCF1930927600D88380 /* LKSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DCE1930927600D88380 /* LKSettingViewController.m */; };
+		D9B8DF921930A77A000A05A5 /* CompanyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B8DF911930A77A000A05A5 /* CompanyObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,9 @@
 		C1844DCB193091F600D88380 /* LKMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKMessageViewController.m; sourceTree = "<group>"; };
 		C1844DCD1930927600D88380 /* LKSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKSettingViewController.h; sourceTree = "<group>"; };
 		C1844DCE1930927600D88380 /* LKSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKSettingViewController.m; sourceTree = "<group>"; };
+		D9B8DF8F1930A5FA000A05A5 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		D9B8DF901930A77A000A05A5 /* CompanyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyObject.h; sourceTree = "<group>"; };
+		D9B8DF911930A77A000A05A5 /* CompanyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,7 @@
 		C10A084719307BE000D37112 /* Lynkr */ = {
 			isa = PBXGroup;
 			children = (
+				D9B8DF8F1930A5FA000A05A5 /* Constants.h */,
 				C10A085019307BE000D37112 /* AppDelegate.h */,
 				C10A085119307BE000D37112 /* AppDelegate.m */,
 				C10A085319307BE000D37112 /* Main.storyboard */,
@@ -196,6 +201,8 @@
 				C10A085919307BE000D37112 /* Images.xcassets */,
 				C1844DBC193089BA00D88380 /* OpenSource */,
 				C10A084819307BE000D37112 /* Supporting Files */,
+				D9B8DF901930A77A000A05A5 /* CompanyObject.h */,
+				D9B8DF911930A77A000A05A5 /* CompanyObject.m */,
 			);
 			path = Lynkr;
 			sourceTree = "<group>";
@@ -359,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1844DCF1930927600D88380 /* LKSettingViewController.m in Sources */,
+				D9B8DF921930A77A000A05A5 /* CompanyObject.m in Sources */,
 				C10A085819307BE000D37112 /* LKRootViewController.m in Sources */,
 				C10A085219307BE000D37112 /* AppDelegate.m in Sources */,
 				C10A084E19307BE000D37112 /* main.m in Sources */,

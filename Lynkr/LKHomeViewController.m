@@ -7,6 +7,7 @@
 //
 
 #import "LKHomeViewController.h"
+#import "CompanyObject.h"
 
 @interface LKHomeViewController ()
 
@@ -26,7 +27,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [[CompanyObjectDataProvider sharedCompanyDataProvider] queryCompanyByCity:@"San Francisco"];
+    
 }
 
 - (void)didReceiveMemoryWarning
