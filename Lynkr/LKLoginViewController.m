@@ -1,18 +1,18 @@
 //
-//  LKProfileViewController.m
+//  LKLoginViewController.m
 //  Lynkr
 //
 //  Created by Derrick J Chie on 5/24/14.
 //  Copyright (c) 2014 Derrick J Chie. All rights reserved.
 //
 
-#import "LKProfileViewController.h"
+#import "LKLoginViewController.h"
 
-@interface LKProfileViewController ()
+@interface LKLoginViewController ()
 
 @end
 
-@implementation LKProfileViewController
+@implementation LKLoginViewController
 
 - (void)viewDidLoad
 {

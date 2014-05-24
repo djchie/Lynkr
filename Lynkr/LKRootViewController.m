@@ -22,6 +22,10 @@
 //    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
 //    testObject[@"foo"] = @"bar";
 //    [testObject saveInBackground];
+    
+    LKLoginViewController* loginViewController = [[LKLoginViewController alloc] init];
+    
+    [self presentViewController:loginViewController animated:NO completion:nil];
 }
 
 - (void)didReceiveMemoryWarning

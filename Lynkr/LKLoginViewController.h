@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LKLoginViewController.h
 //  Lynkr
 //
 //  Created by Derrick J Chie on 5/24/14.
@@ -8,9 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
-#include "RESideMenu.h"
-#import "LKLoginViewController.h"
 
-@interface LKRootViewController : RESideMenu <RESideMenuDelegate>
+@interface LKLoginViewController : UIViewController
 
 @end

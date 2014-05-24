@@ -18,7 +18,7 @@
     [Parse setApplicationId:kParseAppId
                   clientKey:kParseClientKey];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-    
+
     return YES;
 }
 							
