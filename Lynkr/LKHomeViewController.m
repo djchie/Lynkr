@@ -7,6 +7,7 @@
 //
 
 #import "LKHomeViewController.h"
+#import "LKLoginViewController.h"
 
 @interface LKHomeViewController ()
 
@@ -18,6 +19,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    LKLoginViewController* loginViewController = [[LKLoginViewController alloc] init];
+    
+    [self presentViewController:loginViewController animated:NO completion:nil];
 }
 
 - (void)didReceiveMemoryWarning
