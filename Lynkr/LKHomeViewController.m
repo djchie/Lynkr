@@ -29,10 +29,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
-
-    
 }
+
+
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
@@ -41,19 +40,11 @@
         if (!err && obj.count > 0)
         {
             _companyArray = obj;
-            _currentCompany = [_companyArray objectAtIndex:0];
+            NSLog(@"successfully queried");
+            
+            //_currentCompany = [_companyArray objectAtIndex:0];
+            [self setLogoImageForIndex:1];
 
-            UIImage *image = [_currentCompany getCompanyImage];
-            if (image)
-            {
-                UIImageView *imageView = [[UIImageView alloc] initWithFrame:_draggableView.frame];
-                imageView.image = image;
-                imageView.contentMode = UIViewContentModeScaleAspectFit;
-                [_draggableView addSubview:imageView];
-                imageView.frame = CGRectMake(_draggableView.center.x - 150, _draggableView.center.y - 250, _draggableView.frame.size.width, _draggableView.frame.size.height);
-                
-                [_draggableView bringSubviewToFront:imageView];  
-            }
         }
         else{
             UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Error" message:err.description delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -62,9 +53,31 @@
         
     };
   //  [[CompanyObjectDataProvider sharedCompanyDataProvider] queryCompanyByCity:@"Irvine" andCompletion:completionBlock];
-    [[CompanyObjectDataProvider sharedCompanyDataProvider] queryCompanyByName:@"PeopleSpace" andCompletion:completionBlock];
-
+    [[CompanyObjectDataProvider sharedCompanyDataProvider] queryCompanyByCity:@"Palo Alto" andCompletion:completionBlock];
 }
+
+-(void)setLogoImageForIndex:(int)index
+{
+    _currentCompany = [_companyArray objectAtIndex:index];
+    UIImage *image = [_currentCompany getCompanyImage];
+    if (image)
+    {
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:_draggableView.frame];
+        imageView.image = image;
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
+        [_draggableView addSubview:imageView];
+        imageView.frame = CGRectMake(_draggableView.center.x - 150, _draggableView.center.y - 250, _draggableView.frame.size.width, _draggableView.frame.size.height);
+        [_draggableView bringSubviewToFront:imageView];
+
+    }
+    else
+    {
+        // here we should put no image available
+        NSLog(@"no image available for %@", _currentCompany[@"name"]);
+        
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
