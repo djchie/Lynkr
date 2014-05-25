@@ -8,15 +8,14 @@
 
 #import <Parse/Parse.h>
 
-@interface CompanyObject : NSObject
+@interface PFObject (CompanyObject)
 {
 }
--(id)init;
 -(UIImage *)getCompanyImage;
 -(NSString *)getCompanyShortDescription;
 -(NSString *)getCompanyLongDescription;
 
-@property(nonatomic, strong)PFObject *pfObject;
+//@property(nonatomic, strong)PFObject *pfObject;
 
 @end
 
@@ -27,8 +26,8 @@
 }
 +(CompanyObjectDataProvider *)sharedCompanyDataProvider;
 -(id)init;
--(void)queryCompanyByCity:(NSString *)city;
--(NSArray *)getQueryResult;
+-(void)queryCompanyByCity:(NSString *)city andCompletion:(void (^)(NSArray *, NSError *))block;
+-(void)queryCompanyByName:(NSString *)name andCompletion:(void (^)(NSArray *, NSError *))block;
 
 // variable is used to store the latest query
 @end

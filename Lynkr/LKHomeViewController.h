@@ -10,5 +10,6 @@
 #import "RESideMenu.h"
 
 @interface LKHomeViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImage;
 
 @end

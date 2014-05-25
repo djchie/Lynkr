@@ -170,6 +170,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="rpf-sE-79M"/>
+                    <connections>
+                        <outlet property="backgroundImage" destination="rwX-pl-DFv" id="R5A-Ry-dmg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f95-CJ-pKL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
