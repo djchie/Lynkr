@@ -36,6 +36,16 @@
     return [self objectForKey:@"description"];
 }
 
+-(NSString *)getCompanyCity
+{
+    return [self objectForKey:@"city"];
+}
+
+-(NSString *)getCompanyState
+{
+    return [self objectForKey:@"region"];
+}
+
 
 
 @end

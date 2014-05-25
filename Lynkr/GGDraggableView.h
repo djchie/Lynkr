@@ -12,5 +12,9 @@
 
 @interface GGDraggableView : UIView
 
+@property(nonatomic, strong) UILabel *nameLabel;
+@property(nonatomic, strong) UIImageView *logoImageView;
+@property(nonatomic, strong) UITextView *pitchTextView;
+@property(nonatomic, strong) UILabel *locationLabel;
 
 @end

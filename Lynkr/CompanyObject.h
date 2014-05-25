@@ -14,6 +14,8 @@
 -(UIImage *)getCompanyImage;
 -(NSString *)getCompanyShortDescription;
 -(NSString *)getCompanyLongDescription;
+-(NSString *)getCompanyCity;
+-(NSString *)getCompanyState;
 
 //@property(nonatomic, strong)PFObject *pfObject;
 

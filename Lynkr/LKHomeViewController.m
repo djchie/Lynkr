@@ -19,42 +19,50 @@
 - (void)loadView
 {
     self.view = [[GGView alloc] init];
-    GGView *ggView = (GGView *)self.view;
-    _draggableView = ggView.draggableView;
-//    [_draggableView setBackgroundColor:[UIColor clearColor]];
+    self.ggView = (GGView *)self.view;
 
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
-    self.navigationItem.title = @"Home";
     
-}
+    self.draggableView = self.ggView.draggableView;
 
--(void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
+    self.navigationItem.title = @"Lynker";
+    
     void (^completionBlock)(NSArray *obj, NSError *err) = ^(NSArray *obj, NSError *err)
     {
         if (!err && obj.count > 0)
         {
-            _companyArray = obj;
-            _currentCompany = [_companyArray objectAtIndex:0];
-
-            UIImage *image = [_currentCompany getCompanyImage];
+            self.companyArray = obj;
+            self.currentCompany = [self.companyArray objectAtIndex:0];
+            
+            NSString *nameString = [self.currentCompany objectForKey:@"name"];
+            self.draggableView.nameLabel.text = nameString;
+            
+            UIImage *image = [self.currentCompany getCompanyImage];
             if (image)
             {
-                UIImageView *imageView = [[UIImageView alloc] initWithFrame:_draggableView.frame];
-                imageView.image = image;
-                imageView.contentMode = UIViewContentModeScaleAspectFit;
-                [_draggableView addSubview:imageView];
-                imageView.frame = CGRectMake(_draggableView.center.x - 150, _draggableView.center.y - 250, _draggableView.frame.size.width, _draggableView.frame.size.height);
-                
-                [_draggableView bringSubviewToFront:imageView];  
+                self.draggableView.logoImageView.image = image;
             }
+            
+            NSString *shortDescriptionString = [self.currentCompany getCompanyShortDescription];
+            self.draggableView.pitchTextView.text = shortDescriptionString;
+            
+            NSString *cityString = [self.currentCompany getCompanyCity];
+            NSString *stateString = [self.currentCompany getCompanyState];
+            NSString *locationString = [NSString stringWithFormat:@"%@, %@", cityString, stateString];
+            self.draggableView.locationLabel.text = locationString;
+            
         }
         else{
             UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Error" message:err.description delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -62,15 +70,22 @@
         }
         
     };
-  //  [[CompanyObjectDataProvider sharedCompanyDataProvider] queryCompanyByCity:@"Irvine" andCompletion:completionBlock];
+    //  [[CompanyObjectDataProvider sharedCompanyDataProvider] queryCompanyByCity:@"Irvine" andCompletion:completionBlock];
     [[CompanyObjectDataProvider sharedCompanyDataProvider] queryCompanyByName:@"PeopleSpace" andCompletion:completionBlock];
-
+    
 }
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+// make method call for grabbing company by name and put in above implementation
+// put below in viewWillAppear
+// call 20 companies
+// put it in array of companies
+// in view did load, just the first company -- maybe make a method that handles making companies
 
 /*
 #pragma mark - Navigation

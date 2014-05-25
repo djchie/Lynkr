@@ -2,9 +2,11 @@
 #import "GGOverlayView.h"
 
 @interface GGDraggableView ()
+
 @property(nonatomic, strong) UIPanGestureRecognizer *panGestureRecognizer;
 @property(nonatomic) CGPoint originalPoint;
 @property(nonatomic, strong) GGOverlayView *overlayView;
+
 @end
 
 @implementation GGDraggableView
@@ -22,6 +24,18 @@
     self.overlayView = [[GGOverlayView alloc] initWithFrame:self.bounds];
     self.overlayView.alpha = 0;
     [self addSubview:self.overlayView];
+    
+    self.nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(42, 18, 176, 21)];
+    self.nameLabel.textAlignment = NSTextAlignmentCenter;
+    [self addSubview:self.nameLabel];
+    self.logoImageView = [[UIImageView alloc] initWithFrame:CGRectMake(35, 44, 190, 128)];
+    self.logoImageView.contentMode = UIViewContentModeScaleAspectFit;
+    [self addSubview:self.logoImageView];
+    self.pitchTextView = [[UITextView alloc] initWithFrame:CGRectMake(22, 198, 216, 110)];
+    [self addSubview:self.pitchTextView];
+    self.locationLabel = [[UILabel alloc] initWithFrame:CGRectMake(42, 329, 176, 21)];
+    self.locationLabel.textAlignment = NSTextAlignmentCenter;
+    [self addSubview:self.locationLabel];
     
     self.backgroundColor = [UIColor whiteColor];
 
