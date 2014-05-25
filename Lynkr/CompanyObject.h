@@ -29,7 +29,9 @@
 +(CompanyObjectDataProvider *)sharedCompanyDataProvider;
 -(id)init;
 -(void)queryCompanyByCity:(NSString *)city andCompletion:(void (^)(NSArray *, NSError *))block;
+-(NSArray *)queryCompanyByCity:(NSString *)city;
 -(void)queryCompanyByName:(NSString *)name andCompletion:(void (^)(NSArray *, NSError *))block;
+-(NSArray *)queryCompanyByName:(NSString *)name;
 
 // variable is used to store the latest query
 @end

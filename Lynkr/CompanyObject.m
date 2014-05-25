@@ -73,7 +73,15 @@
     PFQuery *query = [PFQuery queryWithClassName:@"CompanyObject"];
     [query whereKey:@"city" equalTo:city];
     [query findObjectsInBackgroundWithBlock:block];
+}
+
+-(NSArray *)queryCompanyByCity:(NSString *)city
+{
+    PFQuery *query = [PFQuery queryWithClassName:@"CompanyObject"];
+    [query whereKey:@"city" equalTo:city];
+    NSArray *returnArray = [query findObjects];
     
+    return returnArray;
 }
 
 -(void)queryCompanyByName:(NSString *)name andCompletion:(void (^)(NSArray *, NSError *))block
@@ -81,6 +89,15 @@
     PFQuery *query = [PFQuery queryWithClassName:@"CompanyObject"];
     [query whereKey:@"name" equalTo:name];
     [query findObjectsInBackgroundWithBlock:block];
+}
+
+-(NSArray *)queryCompanyByName:(NSString *)name
+{
+    PFQuery *query = [PFQuery queryWithClassName:@"CompanyObject"];
+    [query whereKey:@"name" equalTo:name];
+    NSArray *returnArray = [query findObjects];
+    
+    return returnArray;
 }
 
 

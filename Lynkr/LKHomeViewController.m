@@ -39,7 +39,16 @@
 
     [self fetchCompanyByName:@"PeopleSpace"];
     [self fetchCompanyByName:@"SendGrid"];
+    [self fetchCompanyByName:@"Twilio"];
+    [self fetchCompanyByName:@"GitHub"];
+    [self fetchCompanyByName:@"Cylance"];
+    [self fetchCompanyByName:@"Rdio"];
+    [self fetchCompanyByName:@"DropBox"];
+    [self fetchCompanyByName:@"Facebook"];
+    [self fetchCompanyByName:@"Lob"];
+    [self fetchCompanyByName:@"Google"];
     
+    [self presentCompany:[self.companyArray objectAtIndex:0]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,23 +59,16 @@
 
 - (void)fetchCompanyByName:(NSString *)companyName
 {
-    void (^completionBlock)(NSArray *obj, NSError *err) = ^(NSArray *obj, NSError *err)
+    NSArray *obj = [[CompanyObjectDataProvider sharedCompanyDataProvider] queryCompanyByName:companyName];
+    if (obj && obj.count > 0)
     {
-        if (!err && obj.count > 0)
-        {
-            [self.companyArray addObject:[obj objectAtIndex:0]];
-            
-            [self presentCompany:[self.companyArray objectAtIndex:0]];
-            
-        }
-        else
-        {
-            UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Error" message:err.description delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-            [av show];
-        }
+        [self.companyArray addObject:[obj objectAtIndex:0]];
         
-    };
-    [[CompanyObjectDataProvider sharedCompanyDataProvider] queryCompanyByName:companyName andCompletion:completionBlock];
+    }
+    else
+    {
+        NSLog(@"An error retrieving the company: %@", companyName);
+    }
     
 }
 
