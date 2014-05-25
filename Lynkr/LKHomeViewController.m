@@ -21,7 +21,7 @@
     self.view = [[GGView alloc] init];
     GGView *ggView = (GGView *)self.view;
     _draggableView = ggView.draggableView;
-    [_draggableView setBackgroundColor:[UIColor clearColor]];
+//    [_draggableView setBackgroundColor:[UIColor clearColor]];
 
 }
 
@@ -30,9 +30,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-
+    self.navigationItem.title = @"Home";
     
 }
+
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];

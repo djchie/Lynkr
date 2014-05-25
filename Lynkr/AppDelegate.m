@@ -20,8 +20,11 @@
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:.55 green:.09 blue:.09 alpha:.09]];
     
-     //setBackgroundColor:[UIColor colorWithRed:.55 green:.09 blue:.09 alpha:.09]];
-    
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+
+//    self.navigationController.navigationBar.translucent = NO;
 
     return YES;
 }

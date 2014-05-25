@@ -23,7 +23,7 @@
     self.overlayView.alpha = 0;
     [self addSubview:self.overlayView];
     
-    self.backgroundColor = [UIColor lightGrayColor];
+    self.backgroundColor = [UIColor whiteColor];
 
     return self;
 }

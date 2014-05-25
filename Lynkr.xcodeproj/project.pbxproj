@@ -199,6 +199,8 @@
 				C10A085019307BE000D37112 /* AppDelegate.h */,
 				C10A085119307BE000D37112 /* AppDelegate.m */,
 				C10A085319307BE000D37112 /* Main.storyboard */,
+				D9BA7A5C1931D24000EF418E /* LKUIViewController.h */,
+				D9BA7A5D1931D24000EF418E /* LKUIViewController.m */,
 				C10A085619307BE000D37112 /* LKRootViewController.h */,
 				C10A085719307BE000D37112 /* LKRootViewController.m */,
 				C1844DC419308FEC00D88380 /* LKHomeViewController.h */,
@@ -209,13 +211,11 @@
 				C1844DCB193091F600D88380 /* LKMessageViewController.m */,
 				C1844DCD1930927600D88380 /* LKSettingViewController.h */,
 				C1844DCE1930927600D88380 /* LKSettingViewController.m */,
-				C1844DD61931BBA900D88380 /* SlideGroup */,
+				C1844DD61931BBA900D88380 /* SlideView */,
 				C1844DC319308FB300D88380 /* SideMenu */,
 				C10A085919307BE000D37112 /* Images.xcassets */,
 				C1844DBC193089BA00D88380 /* OpenSource */,
 				C10A084819307BE000D37112 /* Supporting Files */,
-				D9BA7A5C1931D24000EF418E /* LKUIViewController.h */,
-				D9BA7A5D1931D24000EF418E /* LKUIViewController.m */,
 			);
 			path = Lynkr;
 			sourceTree = "<group>";
@@ -281,7 +281,7 @@
 			name = SideMenu;
 			sourceTree = "<group>";
 		};
-		C1844DD61931BBA900D88380 /* SlideGroup */ = {
+		C1844DD61931BBA900D88380 /* SlideView */ = {
 			isa = PBXGroup;
 			children = (
 				C1844DE01931BEAE00D88380 /* GGView.m */,
@@ -291,7 +291,7 @@
 				C1844DDB1931BBBE00D88380 /* GGOverlayView.m */,
 				C1844DDC1931BBBE00D88380 /* GGOverlayView.h */,
 			);
-			name = SlideGroup;
+			name = SlideView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

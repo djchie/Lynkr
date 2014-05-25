@@ -12,8 +12,6 @@
     self = [super init];
     if (!self) return nil;
 
-    self.backgroundColor = [UIColor whiteColor];
-
     [self loadDraggableCustomView];
 
     return self;
