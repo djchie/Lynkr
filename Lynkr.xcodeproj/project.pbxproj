@@ -45,6 +45,7 @@
 		C1844DE21931BEAE00D88380 /* GGView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DE01931BEAE00D88380 /* GGView.m */; };
 		D9BA79B61931B81A00EF418E /* CompanyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BA79B41931B81A00EF418E /* CompanyObject.m */; };
 		D9BA7A5E1931D24000EF418E /* LKUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BA7A5D1931D24000EF418E /* LKUIViewController.m */; };
+		FD4544711931DE1000FB7C84 /* LKMoreInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4544701931DE1000FB7C84 /* LKMoreInfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,8 @@
 		D9BA79B51931B81A00EF418E /* CompanyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyObject.h; sourceTree = "<group>"; };
 		D9BA7A5C1931D24000EF418E /* LKUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKUIViewController.h; sourceTree = "<group>"; };
 		D9BA7A5D1931D24000EF418E /* LKUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKUIViewController.m; sourceTree = "<group>"; };
+		FD45446F1931DE1000FB7C84 /* LKMoreInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKMoreInfoViewController.h; sourceTree = "<group>"; };
+		FD4544701931DE1000FB7C84 /* LKMoreInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKMoreInfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +219,8 @@
 				C10A084819307BE000D37112 /* Supporting Files */,
 				D9BA7A5C1931D24000EF418E /* LKUIViewController.h */,
 				D9BA7A5D1931D24000EF418E /* LKUIViewController.m */,
+				FD45446F1931DE1000FB7C84 /* LKMoreInfoViewController.h */,
+				FD4544701931DE1000FB7C84 /* LKMoreInfoViewController.m */,
 			);
 			path = Lynkr;
 			sourceTree = "<group>";
@@ -397,6 +402,7 @@
 				D9BA7A5E1931D24000EF418E /* LKUIViewController.m in Sources */,
 				C10A085219307BE000D37112 /* AppDelegate.m in Sources */,
 				C1844DDF1931BBBE00D88380 /* GGOverlayView.m in Sources */,
+				FD4544711931DE1000FB7C84 /* LKMoreInfoViewController.m in Sources */,
 				C10A084E19307BE000D37112 /* main.m in Sources */,
 				C1844DBA193087CF00D88380 /* RESideMenu.m in Sources */,
 				C1844DDE1931BBBE00D88380 /* GGDraggableView.m in Sources */,
