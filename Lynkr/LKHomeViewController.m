@@ -7,7 +7,6 @@
 //
 
 #import "LKHomeViewController.h"
-#import "CompanyObject.h"
 
 @interface LKHomeViewController ()
 
@@ -27,36 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    
-}
-
--(void)viewDidAppear:(BOOL)animated
-{
-    void (^completionBlock)(NSArray *obj, NSError *err) = ^(NSArray *obj, NSError *err)
-    {
-        if (!err)
-        {
-            NSLog(@"query was successful");
-            NSLog(@"%i companies found", obj.count);
-            NSLog(@"objects %@", obj);
-//            PFObject *obje = [obj objectAtIndex:0];
-//            UIImage *image = [obje getCompanyImage];
-//            if (image)
-//            {
-//                UIImageView *view = [[UIImageView alloc] initWithFrame:self.backgroundImage.frame];
-//                view.image = image;
-//                [self.view addSubview:view];
-//                
-//            }
-            
-        }
-        else
-        {
-        }
-        
-    };
-    [[CompanyObjectDataProvider sharedCompanyDataProvider] queryCompanyByName:@"SendGrid" andCompletion:completionBlock];
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning

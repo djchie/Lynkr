@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C10A084219307BE000D37112 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10A084119307BE000D37112 /* Foundation.framework */; };
+		C10A084419307BE000D37112 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10A084319307BE000D37112 /* CoreGraphics.framework */; };
+		C10A084619307BE000D37112 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10A084519307BE000D37112 /* UIKit.framework */; };
+		C10A084C19307BE000D37112 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C10A084A19307BE000D37112 /* InfoPlist.strings */; };
+		C10A084E19307BE000D37112 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C10A084D19307BE000D37112 /* main.m */; };
+		C10A085219307BE000D37112 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C10A085119307BE000D37112 /* AppDelegate.m */; };
+		C10A085519307BE000D37112 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C10A085319307BE000D37112 /* Main.storyboard */; };
+		C10A085819307BE000D37112 /* LKRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C10A085719307BE000D37112 /* LKRootViewController.m */; };
+		C10A085A19307BE000D37112 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C10A085919307BE000D37112 /* Images.xcassets */; };
+		C10A086119307BE000D37112 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10A086019307BE000D37112 /* XCTest.framework */; };
+		C10A086219307BE000D37112 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10A084119307BE000D37112 /* Foundation.framework */; };
+		C10A086319307BE100D37112 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10A084519307BE000D37112 /* UIKit.framework */; };
+		C10A086B19307BE100D37112 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C10A086919307BE100D37112 /* InfoPlist.strings */; };
+		C10A086D19307BE100D37112 /* LynkrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C10A086C19307BE100D37112 /* LynkrTests.m */; };
+		C10A087719307D1B00D37112 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10A087619307D1B00D37112 /* Parse.framework */; };
+		C10A087919307D4B00D37112 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10A087819307D4B00D37112 /* AudioToolbox.framework */; };
+		C10A087B19307D5300D37112 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10A087A19307D5300D37112 /* CFNetwork.framework */; };
+		C10A087D19307D6500D37112 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10A087C19307D6500D37112 /* CoreLocation.framework */; };
+		C10A087F19307D6E00D37112 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C10A087E19307D6E00D37112 /* libz.dylib */; };
+		C10A088119307D7500D37112 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10A088019307D7500D37112 /* MobileCoreServices.framework */; };
+		C10A088319307D7E00D37112 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10A088219307D7E00D37112 /* QuartzCore.framework */; };
+		C10A088519307D8500D37112 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10A088419307D8500D37112 /* Security.framework */; };
+		C10A088719307D8A00D37112 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10A088619307D8A00D37112 /* StoreKit.framework */; };
+		C10A088919307D9100D37112 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10A088819307D9100D37112 /* SystemConfiguration.framework */; };
+		C1844DB9193087CF00D88380 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DB4193087CF00D88380 /* RECommonFunctions.m */; };
+		C1844DBA193087CF00D88380 /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DB6193087CF00D88380 /* RESideMenu.m */; };
+		C1844DBB193087CF00D88380 /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DB8193087CF00D88380 /* UIViewController+RESideMenu.m */; };
+		C1844DBF19308C6D00D88380 /* LKLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DBE19308C6D00D88380 /* LKLeftMenuViewController.m */; };
+		C1844DC219308CA400D88380 /* LKRightMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DC119308CA400D88380 /* LKRightMenuViewController.m */; };
+		C1844DC619308FEC00D88380 /* LKHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DC519308FEC00D88380 /* LKHomeViewController.m */; };
+		C1844DC9193090C000D88380 /* LKProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DC8193090C000D88380 /* LKProfileViewController.m */; };
+		C1844DCC193091F600D88380 /* LKMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DCB193091F600D88380 /* LKMessageViewController.m */; };
+		C1844DCF1930927600D88380 /* LKSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DCE1930927600D88380 /* LKSettingViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C10A086419307BE100D37112 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C10A083619307BE000D37112 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C10A083D19307BE000D37112;
+			remoteInfo = Lynkr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C10A083E19307BE000D37112 /* Lynkr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lynkr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C10A084119307BE000D37112 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C10A084319307BE000D37112 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C10A084519307BE000D37112 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C10A084919307BE000D37112 /* Lynkr-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lynkr-Info.plist"; sourceTree = "<group>"; };
+		C10A084B19307BE000D37112 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C10A084D19307BE000D37112 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C10A084F19307BE000D37112 /* Lynkr-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lynkr-Prefix.pch"; sourceTree = "<group>"; };
+		C10A085019307BE000D37112 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C10A085119307BE000D37112 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C10A085419307BE000D37112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C10A085619307BE000D37112 /* LKRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKRootViewController.h; sourceTree = "<group>"; };
+		C10A085719307BE000D37112 /* LKRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKRootViewController.m; sourceTree = "<group>"; };
+		C10A085919307BE000D37112 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C10A085F19307BE000D37112 /* LynkrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LynkrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C10A086019307BE000D37112 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C10A086819307BE100D37112 /* LynkrTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LynkrTests-Info.plist"; sourceTree = "<group>"; };
+		C10A086A19307BE100D37112 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C10A086C19307BE100D37112 /* LynkrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LynkrTests.m; sourceTree = "<group>"; };
+		C10A087619307D1B00D37112 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		C10A087819307D4B00D37112 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C10A087A19307D5300D37112 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C10A087C19307D6500D37112 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C10A087E19307D6E00D37112 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C10A088019307D7500D37112 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C10A088219307D7E00D37112 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C10A088419307D8500D37112 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C10A088619307D8A00D37112 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C10A088819307D9100D37112 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C1844DB3193087CF00D88380 /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
+		C1844DB4193087CF00D88380 /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		C1844DB5193087CF00D88380 /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
+		C1844DB6193087CF00D88380 /* RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESideMenu.m; sourceTree = "<group>"; };
+		C1844DB7193087CF00D88380 /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
+		C1844DB8193087CF00D88380 /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
+		C1844DBD19308C6D00D88380 /* LKLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKLeftMenuViewController.h; sourceTree = "<group>"; };
+		C1844DBE19308C6D00D88380 /* LKLeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKLeftMenuViewController.m; sourceTree = "<group>"; };
+		C1844DC019308CA400D88380 /* LKRightMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKRightMenuViewController.h; sourceTree = "<group>"; };
+		C1844DC119308CA400D88380 /* LKRightMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKRightMenuViewController.m; sourceTree = "<group>"; };
+		C1844DC419308FEC00D88380 /* LKHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKHomeViewController.h; sourceTree = "<group>"; };
+		C1844DC519308FEC00D88380 /* LKHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKHomeViewController.m; sourceTree = "<group>"; };
+		C1844DC7193090C000D88380 /* LKProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKProfileViewController.h; sourceTree = "<group>"; };
+		C1844DC8193090C000D88380 /* LKProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKProfileViewController.m; sourceTree = "<group>"; };
+		C1844DCA193091F600D88380 /* LKMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKMessageViewController.h; sourceTree = "<group>"; };
+		C1844DCB193091F600D88380 /* LKMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKMessageViewController.m; sourceTree = "<group>"; };
+		C1844DCD1930927600D88380 /* LKSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKSettingViewController.h; sourceTree = "<group>"; };
+		C1844DCE1930927600D88380 /* LKSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKSettingViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C10A083B19307BE000D37112 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C10A088919307D9100D37112 /* SystemConfiguration.framework in Frameworks */,
+				C10A088719307D8A00D37112 /* StoreKit.framework in Frameworks */,
+				C10A088519307D8500D37112 /* Security.framework in Frameworks */,
+				C10A088319307D7E00D37112 /* QuartzCore.framework in Frameworks */,
+				C10A088119307D7500D37112 /* MobileCoreServices.framework in Frameworks */,
+				C10A087F19307D6E00D37112 /* libz.dylib in Frameworks */,
+				C10A087D19307D6500D37112 /* CoreLocation.framework in Frameworks */,
+				C10A084419307BE000D37112 /* CoreGraphics.framework in Frameworks */,
+				C10A087B19307D5300D37112 /* CFNetwork.framework in Frameworks */,
+				C10A087919307D4B00D37112 /* AudioToolbox.framework in Frameworks */,
+				C10A084619307BE000D37112 /* UIKit.framework in Frameworks */,
+				C10A087719307D1B00D37112 /* Parse.framework in Frameworks */,
+				C10A084219307BE000D37112 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C10A085C19307BE000D37112 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C10A086119307BE000D37112 /* XCTest.framework in Frameworks */,
+				C10A086319307BE100D37112 /* UIKit.framework in Frameworks */,
+				C10A086219307BE000D37112 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C10A083519307BE000D37112 = {
+			isa = PBXGroup;
+			children = (
+				C10A084719307BE000D37112 /* Lynkr */,
+				C10A086619307BE100D37112 /* LynkrTests */,
+				C10A084019307BE000D37112 /* Frameworks */,
+				C10A083F19307BE000D37112 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C10A083F19307BE000D37112 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C10A083E19307BE000D37112 /* Lynkr.app */,
+				C10A085F19307BE000D37112 /* LynkrTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C10A084019307BE000D37112 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C10A088819307D9100D37112 /* SystemConfiguration.framework */,
+				C10A088619307D8A00D37112 /* StoreKit.framework */,
+				C10A088419307D8500D37112 /* Security.framework */,
+				C10A088219307D7E00D37112 /* QuartzCore.framework */,
+				C10A088019307D7500D37112 /* MobileCoreServices.framework */,
+				C10A087E19307D6E00D37112 /* libz.dylib */,
+				C10A087C19307D6500D37112 /* CoreLocation.framework */,
+				C10A087A19307D5300D37112 /* CFNetwork.framework */,
+				C10A087819307D4B00D37112 /* AudioToolbox.framework */,
+				C10A087619307D1B00D37112 /* Parse.framework */,
+				C10A084119307BE000D37112 /* Foundation.framework */,
+				C10A084319307BE000D37112 /* CoreGraphics.framework */,
+				C10A084519307BE000D37112 /* UIKit.framework */,
+				C10A086019307BE000D37112 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C10A084719307BE000D37112 /* Lynkr */ = {
+			isa = PBXGroup;
+			children = (
+				C10A085019307BE000D37112 /* AppDelegate.h */,
+				C10A085119307BE000D37112 /* AppDelegate.m */,
+				C10A085319307BE000D37112 /* Main.storyboard */,
+				C10A085619307BE000D37112 /* LKRootViewController.h */,
+				C10A085719307BE000D37112 /* LKRootViewController.m */,
+				C1844DC419308FEC00D88380 /* LKHomeViewController.h */,
+				C1844DC519308FEC00D88380 /* LKHomeViewController.m */,
+				C1844DC7193090C000D88380 /* LKProfileViewController.h */,
+				C1844DC8193090C000D88380 /* LKProfileViewController.m */,
+				C1844DCA193091F600D88380 /* LKMessageViewController.h */,
+				C1844DCB193091F600D88380 /* LKMessageViewController.m */,
+				C1844DCD1930927600D88380 /* LKSettingViewController.h */,
+				C1844DCE1930927600D88380 /* LKSettingViewController.m */,
+				C1844DC319308FB300D88380 /* SideMenu */,
+				C10A085919307BE000D37112 /* Images.xcassets */,
+				C1844DBC193089BA00D88380 /* OpenSource */,
+				C10A084819307BE000D37112 /* Supporting Files */,
+			);
+			path = Lynkr;
+			sourceTree = "<group>";
+		};
+		C10A084819307BE000D37112 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C10A084919307BE000D37112 /* Lynkr-Info.plist */,
+				C10A084A19307BE000D37112 /* InfoPlist.strings */,
+				C10A084D19307BE000D37112 /* main.m */,
+				C10A084F19307BE000D37112 /* Lynkr-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C10A086619307BE100D37112 /* LynkrTests */ = {
+			isa = PBXGroup;
+			children = (
+				C10A086C19307BE100D37112 /* LynkrTests.m */,
+				C10A086719307BE100D37112 /* Supporting Files */,
+			);
+			path = LynkrTests;
+			sourceTree = "<group>";
+		};
+		C10A086719307BE100D37112 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C10A086819307BE100D37112 /* LynkrTests-Info.plist */,
+				C10A086919307BE100D37112 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1844DB2193087CF00D88380 /* RESideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C1844DB3193087CF00D88380 /* RECommonFunctions.h */,
+				C1844DB4193087CF00D88380 /* RECommonFunctions.m */,
+				C1844DB5193087CF00D88380 /* RESideMenu.h */,
+				C1844DB6193087CF00D88380 /* RESideMenu.m */,
+				C1844DB7193087CF00D88380 /* UIViewController+RESideMenu.h */,
+				C1844DB8193087CF00D88380 /* UIViewController+RESideMenu.m */,
+			);
+			path = RESideMenu;
+			sourceTree = "<group>";
+		};
+		C1844DBC193089BA00D88380 /* OpenSource */ = {
+			isa = PBXGroup;
+			children = (
+				C1844DB2193087CF00D88380 /* RESideMenu */,
+			);
+			name = OpenSource;
+			sourceTree = "<group>";
+		};
+		C1844DC319308FB300D88380 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C1844DBD19308C6D00D88380 /* LKLeftMenuViewController.h */,
+				C1844DBE19308C6D00D88380 /* LKLeftMenuViewController.m */,
+				C1844DC019308CA400D88380 /* LKRightMenuViewController.h */,
+				C1844DC119308CA400D88380 /* LKRightMenuViewController.m */,
+			);
+			name = SideMenu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C10A083D19307BE000D37112 /* Lynkr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C10A087019307BE100D37112 /* Build configuration list for PBXNativeTarget "Lynkr" */;
+			buildPhases = (
+				C10A083A19307BE000D37112 /* Sources */,
+				C10A083B19307BE000D37112 /* Frameworks */,
+				C10A083C19307BE000D37112 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lynkr;
+			productName = Lynkr;
+			productReference = C10A083E19307BE000D37112 /* Lynkr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C10A085E19307BE000D37112 /* LynkrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C10A087319307BE100D37112 /* Build configuration list for PBXNativeTarget "LynkrTests" */;
+			buildPhases = (
+				C10A085B19307BE000D37112 /* Sources */,
+				C10A085C19307BE000D37112 /* Frameworks */,
+				C10A085D19307BE000D37112 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C10A086519307BE100D37112 /* PBXTargetDependency */,
+			);
+			name = LynkrTests;
+			productName = LynkrTests;
+			productReference = C10A085F19307BE000D37112 /* LynkrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C10A083619307BE000D37112 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Derrick J Chie";
+				TargetAttributes = {
+					C10A085E19307BE000D37112 = {
+						TestTargetID = C10A083D19307BE000D37112;
+					};
+				};
+			};
+			buildConfigurationList = C10A083919307BE000D37112 /* Build configuration list for PBXProject "Lynkr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C10A083519307BE000D37112;
+			productRefGroup = C10A083F19307BE000D37112 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C10A083D19307BE000D37112 /* Lynkr */,
+				C10A085E19307BE000D37112 /* LynkrTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C10A083C19307BE000D37112 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C10A085A19307BE000D37112 /* Images.xcassets in Resources */,
+				C10A084C19307BE000D37112 /* InfoPlist.strings in Resources */,
+				C10A085519307BE000D37112 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C10A085D19307BE000D37112 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C10A086B19307BE100D37112 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C10A083A19307BE000D37112 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1844DCF1930927600D88380 /* LKSettingViewController.m in Sources */,
+				C10A085819307BE000D37112 /* LKRootViewController.m in Sources */,
+				C10A085219307BE000D37112 /* AppDelegate.m in Sources */,
+				C10A084E19307BE000D37112 /* main.m in Sources */,
+				C1844DBA193087CF00D88380 /* RESideMenu.m in Sources */,
+				C1844DC619308FEC00D88380 /* LKHomeViewController.m in Sources */,
+				C1844DB9193087CF00D88380 /* RECommonFunctions.m in Sources */,
+				C1844DCC193091F600D88380 /* LKMessageViewController.m in Sources */,
+				C1844DBF19308C6D00D88380 /* LKLeftMenuViewController.m in Sources */,
+				C1844DC9193090C000D88380 /* LKProfileViewController.m in Sources */,
+				C1844DBB193087CF00D88380 /* UIViewController+RESideMenu.m in Sources */,
+				C1844DC219308CA400D88380 /* LKRightMenuViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C10A085B19307BE000D37112 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C10A086D19307BE100D37112 /* LynkrTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C10A086519307BE100D37112 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C10A083D19307BE000D37112 /* Lynkr */;
+			targetProxy = C10A086419307BE100D37112 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C10A084A19307BE000D37112 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C10A084B19307BE000D37112 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C10A085319307BE000D37112 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C10A085419307BE000D37112 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C10A086919307BE100D37112 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C10A086A19307BE100D37112 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C10A086E19307BE100D37112 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C10A086F19307BE100D37112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C10A087119307BE100D37112 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lynkr/Lynkr-Prefix.pch";
+				INFOPLIST_FILE = "Lynkr/Lynkr-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "18F12A13-3DCB-4CA7-ACE4-12C8AE8CC73C";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C10A087219307BE100D37112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lynkr/Lynkr-Prefix.pch";
+				INFOPLIST_FILE = "Lynkr/Lynkr-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "18F12A13-3DCB-4CA7-ACE4-12C8AE8CC73C";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C10A087419307BE100D37112 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Lynkr.app/Lynkr";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lynkr/Lynkr-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LynkrTests/LynkrTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C10A087519307BE100D37112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Lynkr.app/Lynkr";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lynkr/Lynkr-Prefix.pch";
+				INFOPLIST_FILE = "LynkrTests/LynkrTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C10A083919307BE000D37112 /* Build configuration list for PBXProject "Lynkr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C10A086E19307BE100D37112 /* Debug */,
+				C10A086F19307BE100D37112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C10A087019307BE100D37112 /* Build configuration list for PBXNativeTarget "Lynkr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C10A087119307BE100D37112 /* Debug */,
+				C10A087219307BE100D37112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C10A087319307BE100D37112 /* Build configuration list for PBXNativeTarget "LynkrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C10A087419307BE100D37112 /* Debug */,
+				C10A087519307BE100D37112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C10A083619307BE000D37112 /* Project object */;
+}

@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 #include "RESideMenu.h"
-#import "LKLoginViewController.h"
 
 @interface LKRootViewController : RESideMenu <RESideMenuDelegate>
 
