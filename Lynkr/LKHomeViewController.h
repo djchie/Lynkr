@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "RESideMenu.h"
+#import "GGView.h"
 
 @interface LKHomeViewController : UIViewController
 

@@ -40,6 +40,9 @@
 		C1844DC9193090C000D88380 /* LKProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DC8193090C000D88380 /* LKProfileViewController.m */; };
 		C1844DCC193091F600D88380 /* LKMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DCB193091F600D88380 /* LKMessageViewController.m */; };
 		C1844DCF1930927600D88380 /* LKSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DCE1930927600D88380 /* LKSettingViewController.m */; };
+		C1844DDE1931BBBE00D88380 /* GGDraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DD91931BBBE00D88380 /* GGDraggableView.m */; };
+		C1844DDF1931BBBE00D88380 /* GGOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DDB1931BBBE00D88380 /* GGOverlayView.m */; };
+		C1844DE21931BEAE00D88380 /* GGView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DE01931BEAE00D88380 /* GGView.m */; };
 		D9BA79B61931B81A00EF418E /* CompanyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BA79B41931B81A00EF418E /* CompanyObject.m */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +104,12 @@
 		C1844DCB193091F600D88380 /* LKMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKMessageViewController.m; sourceTree = "<group>"; };
 		C1844DCD1930927600D88380 /* LKSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKSettingViewController.h; sourceTree = "<group>"; };
 		C1844DCE1930927600D88380 /* LKSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKSettingViewController.m; sourceTree = "<group>"; };
+		C1844DD91931BBBE00D88380 /* GGDraggableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGDraggableView.m; sourceTree = "<group>"; };
+		C1844DDA1931BBBE00D88380 /* GGDraggableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGDraggableView.h; sourceTree = "<group>"; };
+		C1844DDB1931BBBE00D88380 /* GGOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGOverlayView.m; sourceTree = "<group>"; };
+		C1844DDC1931BBBE00D88380 /* GGOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGOverlayView.h; sourceTree = "<group>"; };
+		C1844DE01931BEAE00D88380 /* GGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGView.m; sourceTree = "<group>"; };
+		C1844DE11931BEAE00D88380 /* GGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGView.h; sourceTree = "<group>"; };
 		D9BA79B41931B81A00EF418E /* CompanyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyObject.m; sourceTree = "<group>"; };
 		D9BA79B51931B81A00EF418E /* CompanyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyObject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -197,6 +206,7 @@
 				C1844DCB193091F600D88380 /* LKMessageViewController.m */,
 				C1844DCD1930927600D88380 /* LKSettingViewController.h */,
 				C1844DCE1930927600D88380 /* LKSettingViewController.m */,
+				C1844DD61931BBA900D88380 /* SlideGroup */,
 				C1844DC319308FB300D88380 /* SideMenu */,
 				C10A085919307BE000D37112 /* Images.xcassets */,
 				C1844DBC193089BA00D88380 /* OpenSource */,
@@ -264,6 +274,19 @@
 				C1844DC119308CA400D88380 /* LKRightMenuViewController.m */,
 			);
 			name = SideMenu;
+			sourceTree = "<group>";
+		};
+		C1844DD61931BBA900D88380 /* SlideGroup */ = {
+			isa = PBXGroup;
+			children = (
+				C1844DE01931BEAE00D88380 /* GGView.m */,
+				C1844DE11931BEAE00D88380 /* GGView.h */,
+				C1844DD91931BBBE00D88380 /* GGDraggableView.m */,
+				C1844DDA1931BBBE00D88380 /* GGDraggableView.h */,
+				C1844DDB1931BBBE00D88380 /* GGOverlayView.m */,
+				C1844DDC1931BBBE00D88380 /* GGOverlayView.h */,
+			);
+			name = SlideGroup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,12 +390,15 @@
 				D9BA79B61931B81A00EF418E /* CompanyObject.m in Sources */,
 				C10A085819307BE000D37112 /* LKRootViewController.m in Sources */,
 				C10A085219307BE000D37112 /* AppDelegate.m in Sources */,
+				C1844DDF1931BBBE00D88380 /* GGOverlayView.m in Sources */,
 				C10A084E19307BE000D37112 /* main.m in Sources */,
 				C1844DBA193087CF00D88380 /* RESideMenu.m in Sources */,
+				C1844DDE1931BBBE00D88380 /* GGDraggableView.m in Sources */,
 				C1844DC619308FEC00D88380 /* LKHomeViewController.m in Sources */,
 				C1844DB9193087CF00D88380 /* RECommonFunctions.m in Sources */,
 				C1844DCC193091F600D88380 /* LKMessageViewController.m in Sources */,
 				C1844DBF19308C6D00D88380 /* LKLeftMenuViewController.m in Sources */,
+				C1844DE21931BEAE00D88380 /* GGView.m in Sources */,
 				C1844DC9193090C000D88380 /* LKProfileViewController.m in Sources */,
 				C1844DBB193087CF00D88380 /* UIViewController+RESideMenu.m in Sources */,
 				C1844DC219308CA400D88380 /* LKRightMenuViewController.m in Sources */,

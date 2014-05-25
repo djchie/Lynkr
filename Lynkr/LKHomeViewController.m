@@ -8,25 +8,24 @@
 
 #import "LKHomeViewController.h"
 
+
 @interface LKHomeViewController ()
 
 @end
 
 @implementation LKHomeViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (void)loadView
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+    self.view = [[GGView alloc] init];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.7647 green:0.3529 blue:0.3295 alpha:1.0];
 }
 
 - (void)didReceiveMemoryWarning
