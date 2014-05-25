@@ -14,13 +14,9 @@
 
 @interface LKHomeViewController : LKUIViewController
 
-@property(nonatomic, strong)NSArray *companyArray;
+@property(nonatomic, strong) NSMutableArray *companyArray;
 @property(nonatomic, weak) PFObject *currentCompany;
 @property(nonatomic, weak) GGView *ggView;
 @property(nonatomic, weak) GGDraggableView *draggableView;
-//@property(nonatomic, weak) UIImageView *logoImageView;
-//@property(nonatomic, weak) UILabel *nameLabel;
-//@property(nonatomic, weak) UITextView *pitchTextView;
-//@property(nonatomic, weak) UILabel *locationLabel;
 
 @end

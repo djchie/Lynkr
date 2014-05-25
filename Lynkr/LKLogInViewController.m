@@ -58,13 +58,18 @@
      {
          NSLog(@"current user %@", result);
          [[UserObjectDataProvider sharedUserDataProvider] createUserWithDictionary:result];
-         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-         LKRootViewController *rootvc = [storyboard instantiateViewControllerWithIdentifier:@"rootViewController"];
-         [self presentViewController:rootvc animated:true completion:nil];
          
+         [self performSelector:@selector(presentRootViewController) withObject:self afterDelay:1.00];
      }        failure:^(AFHTTPRequestOperation *operation, NSError *error) {
          NSLog(@"failed to fetch current user %@", error);
      }];
+}
+
+- (void)presentRootViewController
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    LKRootViewController *rootvc = [storyboard instantiateViewControllerWithIdentifier:@"rootViewController"];
+    [self presentViewController:rootvc animated:true completion:nil];
 }
 
 - (LIALinkedInHttpClient *)client {
