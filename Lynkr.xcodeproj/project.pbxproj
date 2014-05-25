@@ -68,6 +68,8 @@
 		D9BA7B321931F4F100EF418E /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BA7B191931F4F100EF418E /* UIProgressView+AFNetworking.m */; };
 		D9BA7B331931F4F100EF418E /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BA7B1B1931F4F100EF418E /* UIRefreshControl+AFNetworking.m */; };
 		D9BA7B341931F4F100EF418E /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BA7B1D1931F4F100EF418E /* UIWebView+AFNetworking.m */; };
+		D9BA7B371931F5B300EF418E /* LKLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BA7B361931F5B300EF418E /* LKLogInViewController.m */; };
+		D9BA7B3B1931FC6900EF418E /* UserObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BA7B3A1931FC6900EF418E /* UserObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,6 +186,10 @@
 		D9BA7B1B1931F4F100EF418E /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		D9BA7B1C1931F4F100EF418E /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		D9BA7B1D1931F4F100EF418E /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		D9BA7B351931F5B300EF418E /* LKLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKLogInViewController.h; sourceTree = "<group>"; };
+		D9BA7B361931F5B300EF418E /* LKLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKLogInViewController.m; sourceTree = "<group>"; };
+		D9BA7B391931FC6900EF418E /* UserObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserObject.h; sourceTree = "<group>"; };
+		D9BA7B3A1931FC6900EF418E /* UserObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,11 +269,13 @@
 		C10A084719307BE000D37112 /* Lynkr */ = {
 			isa = PBXGroup;
 			children = (
-				D9BA7AEC1931F4F100EF418E /* AFNetworking */,
-				D9BA7B001931F4F100EF418E /* IOSLinkedInAPI */,
-				D9BA7B0C1931F4F100EF418E /* UIKit+AFNetworking */,
+				D9BA7B381931F5CF00EF418E /* Libraries */,
+				D9BA7B351931F5B300EF418E /* LKLogInViewController.h */,
+				D9BA7B361931F5B300EF418E /* LKLogInViewController.m */,
 				D9BA79B41931B81A00EF418E /* CompanyObject.m */,
 				D9BA79B51931B81A00EF418E /* CompanyObject.h */,
+				D9BA7B391931FC6900EF418E /* UserObject.h */,
+				D9BA7B3A1931FC6900EF418E /* UserObject.m */,
 				C10A085019307BE000D37112 /* AppDelegate.h */,
 				C10A085119307BE000D37112 /* AppDelegate.m */,
 				C10A085319307BE000D37112 /* Main.storyboard */,
@@ -283,10 +291,7 @@
 				C1844DCB193091F600D88380 /* LKMessageViewController.m */,
 				C1844DCD1930927600D88380 /* LKSettingViewController.h */,
 				C1844DCE1930927600D88380 /* LKSettingViewController.m */,
-				C1844DD61931BBA900D88380 /* SlideView */,
-				C1844DC319308FB300D88380 /* SideMenu */,
 				C10A085919307BE000D37112 /* Images.xcassets */,
-				C1844DBC193089BA00D88380 /* OpenSource */,
 				C10A084819307BE000D37112 /* Supporting Files */,
 			);
 			path = Lynkr;
@@ -340,6 +345,7 @@
 				C1844DB2193087CF00D88380 /* RESideMenu */,
 			);
 			name = OpenSource;
+			path = Lynkr;
 			sourceTree = "<group>";
 		};
 		C1844DC319308FB300D88380 /* SideMenu */ = {
@@ -351,6 +357,7 @@
 				C1844DC119308CA400D88380 /* LKRightMenuViewController.m */,
 			);
 			name = SideMenu;
+			path = Lynkr;
 			sourceTree = "<group>";
 		};
 		C1844DD61931BBA900D88380 /* SlideView */ = {
@@ -364,6 +371,7 @@
 				C1844DDC1931BBBE00D88380 /* GGOverlayView.h */,
 			);
 			name = SlideView;
+			path = Lynkr;
 			sourceTree = "<group>";
 		};
 		D9BA7AEC1931F4F100EF418E /* AFNetworking */ = {
@@ -389,7 +397,8 @@
 				D9BA7AFE1931F4F100EF418E /* AFURLSessionManager.h */,
 				D9BA7AFF1931F4F100EF418E /* AFURLSessionManager.m */,
 			);
-			path = AFNetworking;
+			name = AFNetworking;
+			path = Lynkr/AFNetworking;
 			sourceTree = "<group>";
 		};
 		D9BA7B001931F4F100EF418E /* IOSLinkedInAPI */ = {
@@ -405,7 +414,8 @@
 				D9BA7B081931F4F100EF418E /* NSString+LIAEncode.m */,
 				D9BA7B091931F4F100EF418E /* Resources */,
 			);
-			path = IOSLinkedInAPI;
+			name = IOSLinkedInAPI;
+			path = Lynkr/IOSLinkedInAPI;
 			sourceTree = "<group>";
 		};
 		D9BA7B091931F4F100EF418E /* Resources */ = {
@@ -438,7 +448,22 @@
 				D9BA7B1C1931F4F100EF418E /* UIWebView+AFNetworking.h */,
 				D9BA7B1D1931F4F100EF418E /* UIWebView+AFNetworking.m */,
 			);
-			path = "UIKit+AFNetworking";
+			name = "UIKit+AFNetworking";
+			path = "Lynkr/UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		D9BA7B381931F5CF00EF418E /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				C1844DD61931BBA900D88380 /* SlideView */,
+				C1844DC319308FB300D88380 /* SideMenu */,
+				C1844DBC193089BA00D88380 /* OpenSource */,
+				D9BA7AEC1931F4F100EF418E /* AFNetworking */,
+				D9BA7B001931F4F100EF418E /* IOSLinkedInAPI */,
+				D9BA7B0C1931F4F100EF418E /* UIKit+AFNetworking */,
+			);
+			name = Libraries;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -553,6 +578,7 @@
 				C1844DDF1931BBBE00D88380 /* GGOverlayView.m in Sources */,
 				D9BA7B201931F4F100EF418E /* AFHTTPSessionManager.m in Sources */,
 				C10A084E19307BE000D37112 /* main.m in Sources */,
+				D9BA7B3B1931FC6900EF418E /* UserObject.m in Sources */,
 				D9BA7B291931F4F100EF418E /* LIALinkedInHttpClient.m in Sources */,
 				D9BA7B2D1931F4F100EF418E /* AFNetworkActivityIndicatorManager.m in Sources */,
 				C1844DBA193087CF00D88380 /* RESideMenu.m in Sources */,
@@ -568,6 +594,7 @@
 				D9BA7B241931F4F100EF418E /* AFURLRequestSerialization.m in Sources */,
 				C1844DCC193091F600D88380 /* LKMessageViewController.m in Sources */,
 				C1844DBF19308C6D00D88380 /* LKLeftMenuViewController.m in Sources */,
+				D9BA7B371931F5B300EF418E /* LKLogInViewController.m in Sources */,
 				D9BA7B311931F4F100EF418E /* UIImageView+AFNetworking.m in Sources */,
 				C1844DE21931BEAE00D88380 /* GGView.m in Sources */,
 				C1844DC9193090C000D88380 /* LKProfileViewController.m in Sources */,
