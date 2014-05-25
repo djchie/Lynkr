@@ -44,6 +44,7 @@
 		C1844DDF1931BBBE00D88380 /* GGOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DDB1931BBBE00D88380 /* GGOverlayView.m */; };
 		C1844DE21931BEAE00D88380 /* GGView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DE01931BEAE00D88380 /* GGView.m */; };
 		D9BA79B61931B81A00EF418E /* CompanyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BA79B41931B81A00EF418E /* CompanyObject.m */; };
+		D9BA7A5E1931D24000EF418E /* LKUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BA7A5D1931D24000EF418E /* LKUIViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,8 @@
 		C1844DE11931BEAE00D88380 /* GGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGView.h; sourceTree = "<group>"; };
 		D9BA79B41931B81A00EF418E /* CompanyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyObject.m; sourceTree = "<group>"; };
 		D9BA79B51931B81A00EF418E /* CompanyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyObject.h; sourceTree = "<group>"; };
+		D9BA7A5C1931D24000EF418E /* LKUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKUIViewController.h; sourceTree = "<group>"; };
+		D9BA7A5D1931D24000EF418E /* LKUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKUIViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +214,8 @@
 				C10A085919307BE000D37112 /* Images.xcassets */,
 				C1844DBC193089BA00D88380 /* OpenSource */,
 				C10A084819307BE000D37112 /* Supporting Files */,
+				D9BA7A5C1931D24000EF418E /* LKUIViewController.h */,
+				D9BA7A5D1931D24000EF418E /* LKUIViewController.m */,
 			);
 			path = Lynkr;
 			sourceTree = "<group>";
@@ -389,6 +394,7 @@
 				C1844DCF1930927600D88380 /* LKSettingViewController.m in Sources */,
 				D9BA79B61931B81A00EF418E /* CompanyObject.m in Sources */,
 				C10A085819307BE000D37112 /* LKRootViewController.m in Sources */,
+				D9BA7A5E1931D24000EF418E /* LKUIViewController.m in Sources */,
 				C10A085219307BE000D37112 /* AppDelegate.m in Sources */,
 				C1844DDF1931BBBE00D88380 /* GGOverlayView.m in Sources */,
 				C10A084E19307BE000D37112 /* main.m in Sources */,

@@ -7,7 +7,8 @@
 //
 
 #import "LKHomeViewController.h"
-
+#import "CompanyObject.h"
+#import "GGDraggableView.h"
 
 @interface LKHomeViewController ()
 
@@ -18,16 +19,52 @@
 - (void)loadView
 {
     self.view = [[GGView alloc] init];
+    GGView *ggView = (GGView *)self.view;
+    _draggableView = ggView.draggableView;
+    [_draggableView setBackgroundColor:[UIColor clearColor]];
+
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.7647 green:0.3529 blue:0.3295 alpha:1.0];
-}
 
+
+    
+}
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    void (^completionBlock)(NSArray *obj, NSError *err) = ^(NSArray *obj, NSError *err)
+    {
+        if (!err && obj.count > 0)
+        {
+            _companyArray = obj;
+            _currentCompany = [_companyArray objectAtIndex:0];
+
+            UIImage *image = [_currentCompany getCompanyImage];
+            if (image)
+            {
+                UIImageView *imageView = [[UIImageView alloc] initWithFrame:_draggableView.frame];
+                imageView.image = image;
+                imageView.contentMode = UIViewContentModeScaleAspectFit;
+                [_draggableView addSubview:imageView];
+                imageView.frame = CGRectMake(_draggableView.center.x - 150, _draggableView.center.y - 250, _draggableView.frame.size.width, _draggableView.frame.size.height);
+                
+                [_draggableView bringSubviewToFront:imageView];  
+            }
+        }
+        else{
+            UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Error" message:err.description delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [av show];
+        }
+        
+    };
+  //  [[CompanyObjectDataProvider sharedCompanyDataProvider] queryCompanyByCity:@"Irvine" andCompletion:completionBlock];
+    [[CompanyObjectDataProvider sharedCompanyDataProvider] queryCompanyByName:@"PeopleSpace" andCompletion:completionBlock];
+
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

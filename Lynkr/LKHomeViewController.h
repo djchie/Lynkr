@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "RESideMenu.h"
+#import <Parse/Parse.h>
+#import "LKUIViewController.h"
 #import "GGView.h"
 
-@interface LKHomeViewController : UIViewController
+@interface LKHomeViewController : LKUIViewController
+@property(nonatomic, strong)NSArray *companyArray;
+@property(nonatomic, weak) PFObject *currentCompany;
+@property(nonatomic, weak)GGDraggableView *draggableView;
 
 @end

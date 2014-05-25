@@ -18,7 +18,11 @@
     [Parse setApplicationId:@"skNbVtpaHnSqPH967MDOJiNwrDupkh9JWjlGxSOf"
                   clientKey:@"L6ICPiZqndblslJ0LST68eh09ymmuZ9brmFY6WCB"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:.55 green:.09 blue:.09 alpha:.09]];
     
+     //setBackgroundColor:[UIColor colorWithRed:.55 green:.09 blue:.09 alpha:.09]];
+    
+
     return YES;
 }
 							

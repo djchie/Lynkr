@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "RESideMenu.h"
+#import "LKUIViewController.h"
 
-@interface LKMessageViewController : UIViewController
+@interface LKMessageViewController : LKUIViewController
 
 @end

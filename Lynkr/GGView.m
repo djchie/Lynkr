@@ -3,7 +3,6 @@
 
 
 @interface GGView ()
-@property(nonatomic, strong) GGDraggableView *draggableView;
 @end
 
 @implementation GGView
