@@ -40,6 +40,7 @@
 		C1844DC9193090C000D88380 /* LKProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DC8193090C000D88380 /* LKProfileViewController.m */; };
 		C1844DCC193091F600D88380 /* LKMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DCB193091F600D88380 /* LKMessageViewController.m */; };
 		C1844DCF1930927600D88380 /* LKSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DCE1930927600D88380 /* LKSettingViewController.m */; };
+		D9BA79B61931B81A00EF418E /* CompanyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BA79B41931B81A00EF418E /* CompanyObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,8 @@
 		C1844DCB193091F600D88380 /* LKMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKMessageViewController.m; sourceTree = "<group>"; };
 		C1844DCD1930927600D88380 /* LKSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKSettingViewController.h; sourceTree = "<group>"; };
 		C1844DCE1930927600D88380 /* LKSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKSettingViewController.m; sourceTree = "<group>"; };
+		D9BA79B41931B81A00EF418E /* CompanyObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyObject.m; sourceTree = "<group>"; };
+		D9BA79B51931B81A00EF418E /* CompanyObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyObject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +182,8 @@
 		C10A084719307BE000D37112 /* Lynkr */ = {
 			isa = PBXGroup;
 			children = (
+				D9BA79B41931B81A00EF418E /* CompanyObject.m */,
+				D9BA79B51931B81A00EF418E /* CompanyObject.h */,
 				C10A085019307BE000D37112 /* AppDelegate.h */,
 				C10A085119307BE000D37112 /* AppDelegate.m */,
 				C10A085319307BE000D37112 /* Main.storyboard */,
@@ -359,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1844DCF1930927600D88380 /* LKSettingViewController.m in Sources */,
+				D9BA79B61931B81A00EF418E /* CompanyObject.m in Sources */,
 				C10A085819307BE000D37112 /* LKRootViewController.m in Sources */,
 				C10A085219307BE000D37112 /* AppDelegate.m in Sources */,
 				C10A084E19307BE000D37112 /* main.m in Sources */,
@@ -494,6 +500,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -513,6 +520,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
