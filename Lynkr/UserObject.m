@@ -72,8 +72,7 @@
     {
         userObject[@"email"] = dictionary[@"emailAddress"];
     }
-    
-    NSLog(@"%@", userObject);
+    self.currentUser = userObject;
     [userObject saveInBackground];
 }
 -(bool)checkIfUserExist:(NSDictionary *)dictionary
@@ -81,6 +80,7 @@
     PFQuery *query = [PFQuery queryWithClassName:@"User"];
     [query whereKey:@"email" equalTo:dictionary[@"emailAddress"]];
     NSArray *obj = [query findObjects];
+    self.currentUser = [obj objectAtIndex:0];
     if (obj.count == 0)
     {
         return false;

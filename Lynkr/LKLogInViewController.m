@@ -57,10 +57,20 @@
     [self.client GET:[NSString stringWithFormat:@"https://api.linkedin.com/v1/people/~:(id,first-name,last-name,industry,email-address,interests,main-address,headline,phone-numbers,site-standard-profile-request,educations,skills)?oauth2_access_token=%@&format=json", accessToken] parameters:nil success:^(AFHTTPRequestOperation *operation, NSDictionary *result)
      {
          NSLog(@"current user %@", result);
-         [[UserObjectDataProvider sharedUserDataProvider] createUserWithDictionary:result];
-         
+         if ([[UserObjectDataProvider sharedUserDataProvider] checkIfUserExist:result])
+         {
+             NSLog(@"user already exist so we are just logging in");
+
+         }
+         else
+         {
+             [[UserObjectDataProvider sharedUserDataProvider] createUserWithDictionary:result];
+         }
          [self performSelector:@selector(presentRootViewController) withObject:self afterDelay:1.00];
-     }        failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+
+         
+     }        failure:^(AFHTTPRequestOperation *operation, NSError *error)
+     {
          NSLog(@"failed to fetch current user %@", error);
      }];
 }
@@ -80,4 +90,5 @@
     
     return [LIALinkedInHttpClient clientForApplication:application presentingViewController:nil];
 }
+
 @end

@@ -18,6 +18,7 @@
 
 -(void)createUserWithDictionary:(NSDictionary *)dictionary;
 -(bool)checkIfUserExist:(NSDictionary *)dictionary;
+@property(nonatomic, strong)PFObject *currentUser;
 
 
 @end
