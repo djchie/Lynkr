@@ -7,4 +7,5 @@ typedef NS_ENUM(NSUInteger , GGOverlayViewMode) {
 
 @interface GGOverlayView : UIView
 @property (nonatomic) GGOverlayViewMode mode;
+
 @end

@@ -31,6 +31,7 @@
 		C10A088519307D8500D37112 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10A088419307D8500D37112 /* Security.framework */; };
 		C10A088719307D8A00D37112 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10A088619307D8A00D37112 /* StoreKit.framework */; };
 		C10A088919307D9100D37112 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10A088819307D9100D37112 /* SystemConfiguration.framework */; };
+		C119EB9519324FC200A8FBEC /* LKMoreInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C119EB9419324FC200A8FBEC /* LKMoreInfoTableViewController.m */; };
 		C1844DB9193087CF00D88380 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DB4193087CF00D88380 /* RECommonFunctions.m */; };
 		C1844DBA193087CF00D88380 /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DB6193087CF00D88380 /* RESideMenu.m */; };
 		C1844DBB193087CF00D88380 /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C1844DB8193087CF00D88380 /* UIViewController+RESideMenu.m */; };
@@ -112,6 +113,8 @@
 		C10A088419307D8500D37112 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		C10A088619307D8A00D37112 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		C10A088819307D9100D37112 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C119EB9319324FC200A8FBEC /* LKMoreInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKMoreInfoTableViewController.h; sourceTree = "<group>"; };
+		C119EB9419324FC200A8FBEC /* LKMoreInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKMoreInfoTableViewController.m; sourceTree = "<group>"; };
 		C1844DB3193087CF00D88380 /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
 		C1844DB4193087CF00D88380 /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
 		C1844DB5193087CF00D88380 /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
@@ -285,6 +288,8 @@
 				C10A085719307BE000D37112 /* LKRootViewController.m */,
 				C1844DC419308FEC00D88380 /* LKHomeViewController.h */,
 				C1844DC519308FEC00D88380 /* LKHomeViewController.m */,
+				C119EB9319324FC200A8FBEC /* LKMoreInfoTableViewController.h */,
+				C119EB9419324FC200A8FBEC /* LKMoreInfoTableViewController.m */,
 				C1844DC7193090C000D88380 /* LKProfileViewController.h */,
 				C1844DC8193090C000D88380 /* LKProfileViewController.m */,
 				C1844DCA193091F600D88380 /* LKMessageViewController.h */,
@@ -336,16 +341,8 @@
 				C1844DB7193087CF00D88380 /* UIViewController+RESideMenu.h */,
 				C1844DB8193087CF00D88380 /* UIViewController+RESideMenu.m */,
 			);
-			path = RESideMenu;
-			sourceTree = "<group>";
-		};
-		C1844DBC193089BA00D88380 /* OpenSource */ = {
-			isa = PBXGroup;
-			children = (
-				C1844DB2193087CF00D88380 /* RESideMenu */,
-			);
-			name = OpenSource;
-			path = Lynkr;
+			name = RESideMenu;
+			path = Lynkr/RESideMenu;
 			sourceTree = "<group>";
 		};
 		C1844DC319308FB300D88380 /* SideMenu */ = {
@@ -455,9 +452,9 @@
 		D9BA7B381931F5CF00EF418E /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				C1844DB2193087CF00D88380 /* RESideMenu */,
 				C1844DD61931BBA900D88380 /* SlideView */,
 				C1844DC319308FB300D88380 /* SideMenu */,
-				C1844DBC193089BA00D88380 /* OpenSource */,
 				D9BA7AEC1931F4F100EF418E /* AFNetworking */,
 				D9BA7B001931F4F100EF418E /* IOSLinkedInAPI */,
 				D9BA7B0C1931F4F100EF418E /* UIKit+AFNetworking */,
@@ -585,6 +582,7 @@
 				D9BA7B211931F4F100EF418E /* AFNetworkReachabilityManager.m in Sources */,
 				D9BA7B261931F4F100EF418E /* AFURLSessionManager.m in Sources */,
 				D9BA7B2F1931F4F100EF418E /* UIAlertView+AFNetworking.m in Sources */,
+				C119EB9519324FC200A8FBEC /* LKMoreInfoTableViewController.m in Sources */,
 				C1844DDE1931BBBE00D88380 /* GGDraggableView.m in Sources */,
 				C1844DC619308FEC00D88380 /* LKHomeViewController.m in Sources */,
 				D9BA7B231931F4F100EF418E /* AFURLConnectionOperation.m in Sources */,

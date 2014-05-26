@@ -4,8 +4,6 @@
 @interface GGDraggableView ()
 
 @property(nonatomic, strong) UIPanGestureRecognizer *panGestureRecognizer;
-@property(nonatomic) CGPoint originalPoint;
-@property(nonatomic, strong) GGOverlayView *overlayView;
 
 @end
 
@@ -20,10 +18,6 @@
     [self addGestureRecognizer:self.panGestureRecognizer];
 
     [self loadImageAndStyle];
-
-    self.overlayView = [[GGOverlayView alloc] initWithFrame:self.bounds];
-    self.overlayView.alpha = 0;
-    [self addSubview:self.overlayView];
     
     self.nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(42, 18, 176, 21)];
     self.nameLabel.textAlignment = NSTextAlignmentCenter;
@@ -32,10 +26,15 @@
     self.logoImageView.contentMode = UIViewContentModeScaleAspectFit;
     [self addSubview:self.logoImageView];
     self.pitchTextView = [[UITextView alloc] initWithFrame:CGRectMake(22, 198, 216, 110)];
+    self.pitchTextView.editable = NO;
     [self addSubview:self.pitchTextView];
     self.locationLabel = [[UILabel alloc] initWithFrame:CGRectMake(42, 329, 176, 21)];
     self.locationLabel.textAlignment = NSTextAlignmentCenter;
     [self addSubview:self.locationLabel];
+    
+    self.overlayView = [[GGOverlayView alloc] initWithFrame:self.bounds];
+    self.overlayView.alpha = 0;
+    [self addSubview:self.overlayView];
     
     self.backgroundColor = [UIColor whiteColor];
 
@@ -77,7 +76,18 @@
             break;
         };
         case UIGestureRecognizerStateEnded: {
-            [self resetViewPositionAndTransformations];
+            if (xDistance > 150)
+            {
+                [self slideRightViewPositionAndTransformations];
+            }
+            else if (xDistance < -150)
+            {
+                [self slideLeftViewPositionAndTransformations];
+            }
+            else
+            {
+                [self resetViewPositionAndTransformations];
+            }
             break;
         };
         case UIGestureRecognizerStatePossible:break;
@@ -105,6 +115,28 @@
         self.transform = CGAffineTransformMakeRotation(0);
         self.overlayView.alpha = 0;
     }];
+}
+
+- (void)slideLeftViewPositionAndTransformations
+{
+    [UIView animateWithDuration:0.2
+                     animations:^{
+        self.center = CGPointMake(-300, self.center.y);
+        self.overlayView.alpha = 0;
+    }];
+    
+    [self.delegate cardDecided:NO];
+}
+
+- (void)slideRightViewPositionAndTransformations
+{
+    [UIView animateWithDuration:0.2
+                     animations:^{
+        self.center = CGPointMake(620, self.center.y);
+        self.overlayView.alpha = 0;
+    }];
+    
+    [self.delegate cardDecided:YES];
 }
 
 - (void)dealloc

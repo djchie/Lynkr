@@ -11,12 +11,17 @@
 #import <Parse/Parse.h>
 #import "LKUIViewController.h"
 #import "GGView.h"
+#import "CompanyObject.h"
+#import "GGDraggableView.h"
+#import "LKMoreInfoTableViewController.h"
 
-@interface LKHomeViewController : LKUIViewController
+@interface LKHomeViewController : LKUIViewController <GGDraggableViewDelegate>
 
 @property(nonatomic, strong) NSMutableArray *companyArray;
 @property(nonatomic, weak) PFObject *currentCompany;
 @property(nonatomic, weak) GGView *ggView;
-@property(nonatomic, weak) GGDraggableView *draggableView;
+@property(nonatomic, weak) GGDraggableView *topDraggableView;
+@property(nonatomic, weak) GGDraggableView *nextDraggableView;
+@property(nonatomic, weak) UIButton *moreInfoButton;
 
 @end

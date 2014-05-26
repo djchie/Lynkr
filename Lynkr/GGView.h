@@ -11,6 +11,7 @@
 
 
 @interface GGView : UIView
-@property(nonatomic, strong) GGDraggableView *draggableView;
+@property(nonatomic, strong) GGDraggableView *topDraggableView;
+@property(nonatomic, strong) GGDraggableView *nextDraggableView;
 
 @end

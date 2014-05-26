@@ -12,7 +12,8 @@
     if (!self) return nil;
 
     self.backgroundColor = [UIColor whiteColor];
-    self.imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"trollface_300x200"]];
+    self.imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Rejected"]];
+    self.imageView.contentMode = UIViewContentModeScaleAspectFit;
     [self addSubview:self.imageView];
 
     return self;
@@ -24,16 +25,16 @@
 
     _mode = mode;
     if (mode == GGOverlayViewModeLeft) {
-        self.imageView.image = [UIImage imageNamed:@"trollface_300x200"];
+        self.imageView.image = [UIImage imageNamed:@"Rejected"];
     } else {
-        self.imageView.image = [UIImage imageNamed:@"thumbs_up_300x300"];
+        self.imageView.image = [UIImage imageNamed:@"Accepted"];
     }
 }
 
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    self.imageView.frame = CGRectMake(50, 50, 100, 100);
+    self.imageView.frame = CGRectMake(10, 65, 240, 240);
 }
 
 @end

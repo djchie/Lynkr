@@ -19,9 +19,12 @@
 
 - (void)loadDraggableCustomView
 {
-    self.draggableView = [[GGDraggableView alloc] initWithFrame:CGRectMake(30, 95, 260, 370)];
+    self.topDraggableView = [[GGDraggableView alloc] initWithFrame:CGRectMake(30, 95, 260, 370)];
+    self.nextDraggableView = [[GGDraggableView alloc] initWithFrame:CGRectMake(30, 95, 260, 370)];
 
-    [self addSubview:self.draggableView];
+    [self addSubview:self.nextDraggableView];
+    [self addSubview:self.topDraggableView];
+    
 }
 
 @end
